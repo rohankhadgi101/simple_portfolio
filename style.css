@@ -10,20 +10,21 @@ body{
 .container{
     background-color: #f4f4f4;
     height: 95lvh;
-    padding: 4rem 7.5rem 0 7.5rem;
+    width: 100%;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
 }
 .heading-container{
+    padding: 0rem 7.5rem 0 7.5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .creative{
     font-family: Satoshi-BoldItalic;
-    font-size: 2.25rem;
     line-height: 0;
     margin: 0;
     font-style: ;
@@ -38,22 +39,27 @@ body{
 p{
     text-align: center;
 }
-.main-heading{
+.heading{
     font-family: myFont;
+}
+.main-heading{
     font-size: 12.75rem;
     opacity: 0.2;
     text-align: center;
     margin: 0;
-
+    line-height: 90%;
 }
 .head-image{
     display: flex;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
 }
 .header-image{
     height: 32rem;
 }
+
+/* -------absolute---------- */
 .dm{
     position: absolute;
 }
@@ -62,6 +68,136 @@ p{
     left: 20%;
 }
 .dumbelltwo{
-    top: 20%;
+    top: 18%;
     right: 20%;
+}
+@media(max-width: 1624px){
+.dumbellone{
+    top: 20%;
+    left: 16%;
+}
+.dumbelltwo{
+    top: 18%;
+    right: 16%;
+}
+}
+@media(max-width: 1252px){
+    .dumbellone{
+        top: 16%;
+        left: 16%;
+    }
+    .dumbelltwo{
+        top: 24%;
+        right: 16%;
+    }
+}
+@media(max-width: 996px){
+    .dumbellone{
+        top: 14%;
+        left: 10%;
+    }
+    .dumbelltwo{
+        top: 22%;
+        right: 10%;
+    }
+}
+@media(max-width: 868px){
+    .dumbellone{
+        top: 10%;
+        left: 10%;
+    }
+    .dumbelltwo{
+        top: 18%;
+        right: 14%;
+    }
+}
+/* -------absolute---------- */
+
+@media(max-width: 1152px){
+    .main-heading{
+        font-size: 11.75rem;
+        line-height: 92%;
+    }
+
+    .sub-heading{
+        font-size: 1.75rem;   
+    }
+}
+@media(max-width: 868px){
+    .main-heading{
+        font-size: 10rem;
+        line-height: 89%;
+    }
+
+    .sub-heading{
+        font-size: 1.75rem;   
+    }
+    .dumbellone{
+        height: 16%;
+    }
+    .dumbelltwo{
+        height: 18%;
+    }
+}
+/* ---------768------------ */
+@media(max-width: 768px){
+    .container{
+        height: 80lvh;
+    }
+    .heading-container {
+        padding: 0rem 7.5rem 0 7.5rem;
+    }
+    .main-heading{
+        font-size: 7rem;
+        line-height: 89%;
+    }
+
+    .sub-heading{
+        font-size: 1.75rem;  
+        margin-top: 0.25rem; 
+    }
+    .head-image{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+    }
+    .header-image{
+        height: 24rem;
+    }
+}
+@media(max-width: 600px){
+    .heading-container {
+        padding: 0rem 2rem 0 2rem;
+    }
+    .dumbellone{
+        height: 14%;
+    }
+    .dumbelltwo{
+        height: 14%;
+    }
+}
+   
+@media(max-width: 445px){
+    .container{
+        height: 68lvh;
+    }
+    .heading-container {
+        padding: 0rem 2rem 0 2rem;
+    }
+    .main-heading{
+        font-size: 6rem;
+        line-height: 89%;
+    }
+
+    .sub-heading{
+        font-size: 1.45rem;  
+        margin-top: 0.25rem; 
+    }
+    .dm{
+        visibility: hidden;
+    }
+    .header-image{
+        height: 20rem;
+    }
 }
