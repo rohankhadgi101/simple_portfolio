@@ -38,13 +38,14 @@ body{
     margin-top: -1rem;
 }
 p{
-    text-align: center;
+    font-family: satoshi;
+    margin: 0;
 }
 .heading{
     font-family: myFont;
 }
-p{
-    font-family: satoshi;
+.left-text-align{
+    text-align: left; !important
 }
 .main-heading{
     font-size: 12rem;
@@ -62,7 +63,12 @@ p{
 .header-image{
     height: 32rem;
 }
-
+h3{
+    font-family: satoshi-Bold;
+    font-size: 2rem;
+    margin: 0;
+    line-height:normal;
+}
 /* -------absolute---------- */
 .dm{
     position: absolute;
@@ -238,6 +244,8 @@ p{
 .text-container{
     font-size: 1rem;
     margin: 0;
+    padding: 0;
+    line-height: normal;
 }
 hr {
     border: dotted #D9D9D9 8px;
@@ -302,7 +310,7 @@ hr {
     margin-top: 12rem;
     background-color: #f4f4f4;
     width: 100%;
-    padding-top: 8rem;
+    padding: 8rem;
 }
 .skill-heading{
     font-family: satoshi;
@@ -311,3 +319,19 @@ hr {
     padding: 0;
     text-align: center;
 }
+.skills{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+}
+.skill-text{
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+
+}
+
+/* ------------------------ */
+
