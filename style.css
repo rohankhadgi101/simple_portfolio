@@ -39,7 +39,7 @@ body{
 }
 p{
     font-family: satoshi;
-    margin: 0;
+    text-align: center;
 }
 .heading{
     font-family: myFont;
@@ -218,7 +218,7 @@ h3{
     gap: 1.5rem;
     justify-content: center;
     flex-direction: column;
-    margin: 8rem 0 8rem 0;
+    margin: 4rem 0 4rem 0;
 }
 .profile-container{
     display: flex;
@@ -255,7 +255,7 @@ hr {
 @media(min-width: 1428px){
     .quote-container{
         gap: 2rem;
-        margin: 15rem 0 15rem 0;
+        margin: 12rem 0 12rem 0;
     }
 
     .quote-text-container{
@@ -297,7 +297,7 @@ hr {
         font-size: 3rem;
     }
     .text-container{
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     hr {
         border: dotted #D9D9D9 12px;
@@ -307,10 +307,24 @@ hr {
 }
 /* -------------------------------- */
 .sizing-skills{
+    display: flex;
+    flex-direction: column;
     margin-top: 12rem;
+    gap: 6rem;
     background-color: #f4f4f4;
+    max-width: 100%;
+    padding: 8rem 19rem 8rem 19rem;
+}
+.skill-collection{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 8rem;
+    gap: 4rem;
+}
+.image-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .skill-heading{
     font-family: satoshi;
@@ -320,18 +334,160 @@ hr {
     text-align: center;
 }
 .skills{
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
     gap: 2rem;
+    width: auto;
 }
 .skill-text{
     display: flex;
     width: auto;
+    gap: 1rem;
     margin: 0;
     padding: 0;
     flex-direction: column;
+}
 
+@media(max-width: 1428px){
+    .sizing-skills{
+        padding: 6rem 10rem 6rem 10rem;
+    }
+.skill-collection{
+    gap: 4rem;
+}
+.skill-heading{
+    font-size: 3rem;
+    text-align: center;
+}
+.skills{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill-text{
+    gap: 0.25rem;
+    text-align: center;
+    flex-direction: column;
+}
+.left-text-align{
+    text-align: center;
+}
+}
+
+@media(max-width: 1427px) and (min-width: 600px){
+    .sizing-skills{
+        padding: 6rem 8rem 6rem 8rem;
+    }
+.skill-collection{
+    gap: 4rem;
+}
+.skill-heading{
+    font-size: 3rem;
+    text-align: center;
+}
+.skills{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+h3{
+    font-size: 2rem;
+}
+.skill-text{
+    gap: 0.25rem;
+    text-align: center;
+    flex-direction: column;
+}
+.left-text-align{
+    text-align: center;
+}
+}
+
+@media(max-width: 599px){
+    .sizing-skills{
+        padding: 4rem 4rem 4rem 4rem;
+        gap: 3rem;
+    }
+.skill-collection{
+    gap: 4rem;
+}
+.skill-heading{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.skills{
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+h3{
+    font-size: 2rem;
+}
+.skill-text{
+    gap: 0.25rem;
+    text-align: center;
+    flex-direction: column;
+}
+.left-text-align{
+    text-align: center;
+}
+.skill-image{
+    width: 80%;
+}
+}
+
+@media(max-width: 445px){
+    .sizing-skills{
+        margin-top: 4rem;
+        padding: 4rem 2rem 4rem 2rem;
+        gap: 2rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
+    .skill-collection{
+        gap: 3rem;
+    }
+}
+/* ------------------------ */
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    margin: 8rem 0 8rem 0;
+}
+.secondary-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cta-btn{
+    font-family: satoshi-Bold;
+    font-size: 1.5rem;
+    padding: 1rem 3rem 1rem 3rem;
+    color: #fff;
+    background-color: #2E2E2E;
+    width: auto;
 }
 
 /* ------------------------ */
 
+.footer-container{
+    display: flex;
+    background-color: #f4f4f4;
+    justify-content: center;
+    margin-top: 12rem;
+    flex-direction: column;
+    padding: 2rem 0 2rem 0;
+}
+.site-link{
+    display: flex;
+    font-family: satoshi-Medium;
+    font-size: 1.25rem;
+    justify-content: center;
+}
+#copyright{
+    font-size: 16px;
+    color: #797979;
+}
