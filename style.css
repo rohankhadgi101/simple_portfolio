@@ -509,7 +509,8 @@ ul{
 }
 .site-link{
     display: flex;
-    font-family: satoshi-Medium;
+    font-family: satoshi;
+    font-weight: 500;
     font-size: 1.05rem;
     justify-content: space-between;
 }
@@ -517,6 +518,18 @@ a{
     text-decoration: none;
     text-decoration-line: none;
     color: #2E2E2E;
+}
+.linkedin:hover{
+    color: rgb(42, 62, 127);
+    font-weight: 700;
+}
+.instagram:hover{
+    color: rgb(218, 20, 109);
+    font-weight: 700;
+}
+.behance:hover{
+    color: rgb(53, 93, 194);
+    font-weight: 700;
 }
 #copyright{
     font-size: 12px;
